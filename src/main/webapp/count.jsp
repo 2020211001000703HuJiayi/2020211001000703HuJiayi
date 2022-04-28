@@ -1,18 +1,17 @@
 <%--
   Created by IntelliJ IDEA.
-  User: _
-  Date: 2022/4/22
-  Time: 13:46
+  User: 佳佳
+  Date: 2022/4/28
+  Time: 22:36
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>MyJsp</title>
+    <title>Counter JSP</title>
 </head>
 <body>
-<%@include file="header.jsp"%>
-    This is my JSP page.<br>
-<%@include file="footer.jsp"%>
+<%! int count=0;%>
+this Page has access : <%out.println(++count);%>
 </body>
 </html>

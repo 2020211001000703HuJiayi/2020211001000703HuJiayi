@@ -13,6 +13,11 @@
         <element id="directory" name="classes">
           <element id="module-output" name="2020211001000703HuJiayi" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: javax.servlet:jsp-api:2.0" />
+          <element id="library" level="project" name="Maven: javax.servlet:servlet-api:2.4" />
+          <element id="library" level="project" name="Maven: com.microsoft.sqlserver:mssql-jdbc:10.2.0.jre8" />
+        </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/HuJiayi2020211001000703-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
