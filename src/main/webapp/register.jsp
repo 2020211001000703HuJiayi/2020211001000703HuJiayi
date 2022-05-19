@@ -12,9 +12,9 @@
 </head>
 <body>
 
-<%@include file="../header.jsp"%>
+<%@include file="header.jsp"%>
     This is my register page.<br/><br/>
-    <form method="post" action="../register">
+    <form method="post" action="register">
         username<input type="text" name="username"/><br/>
         password<input type="password" name="password" minlength="8"/><br/>
         Email<input type="email" name="email"/><br/>
@@ -22,7 +22,7 @@
         Date of Birth :<input type="date" name="birthDate" pattern="yyyy-mm-dd"><br/>
         <input type="submit" value="register"/>
     </form>
-<%@include file="../footer.jsp"%>
+<%@include file="footer.jsp"%>
 
 </body>
 </html>
