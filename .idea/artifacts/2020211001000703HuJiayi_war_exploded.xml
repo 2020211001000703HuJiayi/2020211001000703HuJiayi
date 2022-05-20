@@ -14,9 +14,8 @@
           <element id="module-output" name="2020211001000703HuJiayi" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Maven: javax.servlet:jsp-api:2.0" />
-          <element id="library" level="project" name="Maven: javax.servlet:servlet-api:2.4" />
           <element id="library" level="project" name="Maven: com.microsoft.sqlserver:mssql-jdbc:10.2.0.jre8" />
+          <element id="library" level="project" name="Maven: org.jetbrains:annotations:23.0.0" />
         </element>
       </element>
       <element id="directory" name="META-INF">
