@@ -43,7 +43,7 @@ public class RegisterServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        request.getRequestDispatcher("WEB-INF/views/register.jsp").forward(request,response);
     }
 
     @Override
@@ -69,6 +69,9 @@ public class RegisterServlet extends HttpServlet {
             {
                 System.out.println("数据添加成功！");
             }
+
+            //week - 9
+            response.sendRedirect("login");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

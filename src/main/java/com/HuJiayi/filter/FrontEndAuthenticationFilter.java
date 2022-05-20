@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-@WebFilter("/*")//all request
+//@WebFilter("/*")//all request
 public class FrontEndAuthenticationFilter implements Filter {
     private HttpServletRequest httpRequest=null;
     public static final String[] loginRequiredURLs={"/updateUser","/logout","/cart",
@@ -47,7 +47,11 @@ public class FrontEndAuthenticationFilter implements Filter {
             request.getRequestDispatcher("/login").forward(request,response);
         }else {
             //for other page which not requires login
-            Chain.doFilter(request,response);//go to page
+            try{
+                Chain.doFilter(request,response);//go to page
+            }catch (NullPointerException e){
+
+            }
         }
 
     }
